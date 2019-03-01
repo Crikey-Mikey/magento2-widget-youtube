@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+  <widget class="BitMike\YoutubeWidget\Block\Widget\Youtube" id="bitmike_youtubewidget">
+    <label>Youtube Widget</label>
+    <description>Insert Youtube video into editor</description>
+    <parameters>
+
+      <parameter name="id" required="true" visible="true" xsi:type="text">
+        <label>Youtube ID</label>
+        <description translate="true">Only enter the videos ID, not the full video URL</description>
+      </parameter>
+
+      <parameter name="include_css" xsi:type="select" visible="true"
+                       source_model="BitMike\YoutubeWidget\Model\Config\Source\IncludeCss">
+        <label translate="true">Include responsive CSS</label>
+        <description translate="true">This will include a CSS script in the HTML to make the iframe responsive</description>
+      </parameter>
+
+    </parameters>
+  </widget>
+</widgets>
